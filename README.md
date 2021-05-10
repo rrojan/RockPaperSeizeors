@@ -1,4 +1,4 @@
-# rock-paper-seizeors
+# Rock Paper Seizors
 
 An interactive Rock Paper Scissors webgame made using JS for the TheOdinProject challenge. Alien invaders themed!
 
