@@ -10,7 +10,7 @@ main {
 }
 
 header {
-    position: fixed;
+    position: relative;
     top: 20px;
     margin-bottom: auto;
 }

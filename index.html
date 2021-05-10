@@ -37,13 +37,13 @@
             <p class="dialogue" id="dlg-4" style="display: none;">Will you be able to outwit them <br>in the ultimate
                 battle of wits...</p>
             <p class="dialogue" id="dlg-5" style="display: none;">In... <br><strong>Rock Paper Scissors?</strong></p>
-            <p class="dialogue query-text" id="dlg-6" style="display: none;">First one to 10 points wins!</p>
+            <p class="dialogue query-text" id="dlg-6" style="display: none;">First one to 5 points wins!</p>
         </div>
         <div id="game" style="display: none;">
             <p class="query-text weapon-text">pick your weapon!</p>
             <div id="weapons-screen">
                 <div class="weapons">
-                    <p class="player-text">(you)</p>
+                    <p class="player-text">you [ <span id="player-score">0</span> ]</p>
                     <p class="query-text" id="player-choice">&nbsp;</p>
                     <div class="weapon" id="weapon-rock">
                         <i class="far fa-hand-rock" id="rock"></i>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div class="weapons">
-                    <p class="player-text">alien</p>
+                    <p class="player-text">alien [ <span id="alien-score">0</span> ]</p>
                     <p class="query-text" id="alien-choice">&nbsp;</p>
                     <div class="weapon opponent" id="opponent-rock">
                         <i class="far fa-hand-rock"></i>
@@ -69,7 +69,13 @@
                     </div>
                 </div>
             </div>
-
+        </div>
+        <div id="results" style="display: none;">
+            <p class="query-text weapon-text">
+                <span id="winner"></span> wins the game!
+                <br>
+                <span id="win-dialogue"></span>
+            </p>
         </div>
     </main>
     <script src="script.js"></script>
