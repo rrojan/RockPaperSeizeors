@@ -28,7 +28,7 @@
         </header>
 
         <div id="dialogue-screen" style="display: none;">
-            <small class="query-text" id="dlg-0"><b>(click anywhere to continue)</b></small>
+            <small class="query-text blink" id="dlg-0"><b>(click anywhere to continue)</b></small>
             <p class="dialogue" id="dlg-1" style="display: none;">It's the year 2079.. <br>&nbsp;</p>
             <p class="dialogue" id="dlg-2" style="display: none;">Dangerour aliens called <span
                     class="seizors">SEIZORS</span> have invaded the Earth...<br>&nbsp;</p>
@@ -72,10 +72,14 @@
         </div>
         <div id="results" style="display: none;">
             <p class="query-text weapon-text">
-                <span id="winner"></span> wins the game!
+                <span id="winner"></span> the game!
                 <br>
-                <span id="win-dialogue"></span>
             </p>
+            <div class="player-text">
+                <span class="player-text" id="win-dialogue"></span><br>
+                <div class="player-text"><a href=".">play again?</a></div>
+            </div>
+            
         </div>
     </main>
     <script src="script.js"></script>
