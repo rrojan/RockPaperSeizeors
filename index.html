@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Seize-or</title>
+    <link rel="stylesheet" href="reset.css">
+
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Flavors&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Eater&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <main>
+        <h1>Rock Paper Seizeors</h1>
+        
+        <div id="dialogue-screen" style="display: none;">
+            <small class="query-text" id="dlg-0"><b>(click anywhere to continue)</b></small>
+            <p class="dialogue" id="dlg-1" style="display: none;">It's the year 2079...</p>
+            <p class="dialogue" id="dlg-2" style="display: none;">Dangerour aliens called <span class="seizors">SEIZORS</span> have invaded the Earth...</p>
+            <p class="dialogue" id="dlg-3" style="display: none;">Whether or not they shall invade the planet now lies on you, <br>the chosen one.</p>
+            <p class="dialogue" id="dlg-4" style="display: none;">Will you be able to outwit them <br>in the ultimate battle of wits../</p>
+            <p class="dialogue" id="dlg-5" style="display: none;">In... <br><strong>Rock Paper Scissors?</strong></p>
+            <p class="dialogue query-text" id="dlg-5" style="display: none;">click anywhere to start playing...</p>
+        </div>
+        <div id="game" style="display: none;">
+            <p class="query-text weapon-text">pick your weapon!</p>
+            <div id="weapons-screen">
+                <div class="weapons">
+                    <p class="player-text">(you)</p>
+                    <p class="query-text" id="player-choice">&nbsp;</p>
+                    <div class="weapon" id="weapon-rock">
+                        <i class="far fa-hand-rock" id="rock"></i>
+                    </div>
+                    <div class="weapon" id="weapon-paper">
+                        <i class="far fa-hand-paper" id="paper"></i>
+                    </div>
+                    <div class="weapon" id="weapon-scissors">
+                        <i class="far fa-hand-scissors" id="scissors"></i>
+                    </div>
+                </div>
+                <div class="weapons">
+                    <p class="player-text">alien</p>
+                    <p class="query-text" id="alien-choice">&nbsp;</p>
+                    <div class="weapon opponent" id="opponent-rock">
+                        <i class="far fa-hand-rock"></i>
+                    </div>
+                    <div class="weapon opponent" id="opponent-paper">
+                        <i class="far fa-hand-paper"></i>
+                    </div>
+                    <div class="weapon opponent" id="opponent-scissors">
+                        <i class="far fa-hand-scissors"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
