@@ -119,8 +119,6 @@ h1 {
     cursor: pointer;
     scale: 1.2;
     background-color: green;
-    -moz-box-shadow: 0 0 20px #ccc;
-    -webkit-box-shadow: 0 0 20px #ccc;
     box-shadow: 0 0 20px #ccc;
     animation: weapons;
     animation-duration: 1s;
@@ -141,8 +139,6 @@ h1 {
     cursor: pointer;
     scale: 1.2;
     background-color: red;
-    -moz-box-shadow: 0 0 20px #ccc;
-    -webkit-box-shadow: 0 0 20px #ccc;
     box-shadow: 0 0 20px #ccc;
     animation: weapons;
     animation-duration: 1s;
@@ -154,7 +150,7 @@ h1 {
     scale: 1.2;
     background-color: red;
     box-shadow: 0 0 20px #ccc;
-    animation: weapons-lose;
+    animation: weapons-draw;
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
@@ -163,8 +159,6 @@ h1 {
     cursor: pointer;
     scale: 1.2;
     background-color: grey;
-    -moz-box-shadow: 0 0 20px #ccc;
-    -webkit-box-shadow: 0 0 20px #ccc;
     box-shadow: 0 0 20px #ccc;
     animation: weapons;
     animation-duration: 3s;
@@ -175,7 +169,6 @@ h1 {
     cursor: pointer;
     scale: 1.2;
     background-color: grey;
-
     box-shadow: 0 0 20px #ccc;
     animation: weapons-draw;
     animation-duration: 3s;
@@ -191,10 +184,10 @@ h1 {
     }
 }
 @keyframes weapons-lose {
-    from {
+    0% {
         background-color: red;
     }
-    to {
+    100% {
         background-color: #111;
     }
 }
