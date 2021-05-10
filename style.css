@@ -9,9 +9,15 @@ main {
     padding: 0px 10px;
 }
 
+header {
+    position: fixed;
+    top: 20px;
+    margin-bottom: auto;
+}
+
 h1 {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 25px;
     padding-bottom: 8vh;
     font-size: 60px;
     font-family: 'Flavors', cursive;
