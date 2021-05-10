@@ -17,7 +17,7 @@ header {
 h1 {
     text-align: center;
     padding-top: 25px;
-    padding-bottom: 6vh;
+    padding-bottom: 8vh;
     font-size: 60px;
     font-family: 'Flavors', cursive;
 }
@@ -40,7 +40,7 @@ h1 {
     font-size: 30px;
     font-family: 'Walter Turncoat', cursive;
     text-align: center;
-    margin-bottom: 2vh;
+    margin-bottom: 5vh;
 }
 
 @media (max-width: 720px) {
@@ -111,12 +111,14 @@ h1 {
 .weapon {
     padding: 20px;
     border-radius: 50%;
-    margin: 10px;
+    margin: 20px;
 }
 
 .weapon:hover {
     cursor: pointer;
     scale: 1.2;
+    -moz-box-shadow: 0 0 20px #ccc;
+    -webkit-box-shadow: 0 0 20px #ccc;
     box-shadow: 0 0 20px #ccc;
     animation: weapons;
     animation-duration: 0.4s;
@@ -147,21 +149,6 @@ h1 {
 
 .weapon-text {
     font-size: 30px;
-}
-
-@media (max-width: 480px) {
-    .player-text {
-        font-size: 20px;
-    }
-    h1 {
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 3vh;
-        font-size: 36px;
-    }
-    .weapon-text {
-        font-size: 20px;
-    }
 }
 
 .win {
@@ -263,11 +250,4 @@ a:visited {
 
 #win-dialogue {
     margin: 10px 10vh;
-}
-
-#play-again {
-    margin-top: 3vh;
-    margin-bottom: 10px;
-    font-size: 20px;
-    text-decoration: none;
 }

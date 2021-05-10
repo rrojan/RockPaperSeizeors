@@ -72,8 +72,8 @@ function playGame() {
     const loseDialogues = [
         'as a recognition to your bravery you are now the official alien shoe-cleaner',
         'you watch with despair as they take away your pet cactus',
-        '"i wish we placed our trust on someone more worthy", <br>you hear someone pulled away',
-        'don\'t cry ma, it will all be over s....',
+        '"i wish we placed our trust on someone more worthy", you hear from a distance',
+        'don\'t cry ma, it will all be over s--',
     ]
 
     function chooseRandom(choices) {
@@ -99,10 +99,10 @@ function playGame() {
         document.getElementById('results').style = ''
         if (winner === 'user') {
             document.getElementById('winner').textContent = 'you win'
-            document.getElementById('win-dialogue').innerHTML = chooseRandom(winDialogues)
+            document.getElementById('win-dialogue').textContent = chooseRandom(winDialogues)
         } else {
             document.getElementById('winner').textContent = 'The aliens win'
-            document.getElementById('win-dialogue').innerHTML = chooseRandom(loseDialogues)
+            document.getElementById('win-dialogue').textContent = chooseRandom(loseDialogues)
         }
     }
 
