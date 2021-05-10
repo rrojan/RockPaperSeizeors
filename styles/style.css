@@ -151,6 +151,22 @@ h1 {
     font-size: 30px;
 }
 
+@media (max-width: 540px) {
+    .weapon-text {
+        font-size: 25px;
+    }
+    h1 {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 3vh;
+        font-size: 40px;
+        font-family: 'Flavors', cursive;
+    }
+    .player-text {
+        font-size: 20px;
+    }
+}
+
 .win {
     cursor: pointer;
     scale: 1.2;
