@@ -132,17 +132,23 @@ function playGame() {
 
             if (playerHasWon === null) {
                 // draw condition
+                document.getElementById('draw-audio').currentTime = 0
+                document.getElementById('draw-audio').play()
                 playerWeaponEl.classList.add('draw')
                 alienWeaponEl.classList.add('draw')
             }
             else if (playerHasWon) {
                 // player win condition
                 playerWin++
+                document.getElementById('win-audio').currentTime = 0
+                document.getElementById('win-audio').play()
                 playerWeaponEl.classList.add('win')
                 alienWeaponEl.classList.add('lose')
             } else {
                 // alien win condition
                 alienWin++
+                document.getElementById('lose-audio').currentTime = 0
+                document.getElementById('lose-audio').play()
                 playerWeaponEl.classList.add('lose')
                 alienWeaponEl.classList.add('win')
             }
