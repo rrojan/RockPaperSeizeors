@@ -5,9 +5,7 @@ const playerScoreEl = document.getElementById('player-score')
 const alienScoreEl = document.getElementById('alien-score')
 
 
-// start game when DOM Loaded
 document.addEventListener('DOMContentLoaded', _ => {
-
     // display the dialogue screen and 1st dialogue
     dScreen.style.removeProperty('display')
 
@@ -73,7 +71,7 @@ function playGame() {
         'as a recognition to your bravery you are now the official alien shoe-cleaner',
         'you watch with despair as they take away your pet cactus',
         '"i wish we placed our trust on someone more worthy", you hear from a distance',
-        'don\'t cry ma, it will all be over s--',
+        'don\'t cry ma, it will all be over soon...',
     ]
 
     function chooseRandom(choices) {
@@ -154,7 +152,7 @@ function playGame() {
             }
 
             sleep(300).then(() => {
-                // i don't remember what i was trying to do with sleep() but turns out this looks awesome so i'm keeping it
+                // I don't remember what I was trying to do with sleep() but turns out this looks awesome so i'm keeping it
                 playerScoreEl.textContent = playerWin
                 alienScoreEl.textContent = alienWin
 
